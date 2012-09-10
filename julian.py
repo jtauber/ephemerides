@@ -76,3 +76,10 @@ def jd_ut2_j2000(jd_ut):
     calculate days since J2000 (TT) epoch
     """
     return jd_ut2tt(jd_ut) - JD_AT_1_JAN_2000
+
+
+def j2000_now():
+    """
+    days since J2000 (TT) epoch
+    """
+    return jd_ut2_j2000(unix2jd_ut())
